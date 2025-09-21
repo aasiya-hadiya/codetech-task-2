@@ -43,3 +43,46 @@ A powerful and user-friendly **Resume Parsing** web app built with **Python**, l
 git clone <your-repo-url>
 cd <your-repo-folder>
 
+
+## Setup Instructions
+
+### 2. Install Dependencies
+
+  Make sure you have Python installed (preferably version 3.7 or higher), then install all required packages by running:
+
+  ```bash
+  pip install -r requirements.txt
+
+3. Prepare the SpaCy Model
+
+  Train your custom SpaCy NER model on labeled resume data (or use the provided model named my_model)
+
+  Place the trained model in the project directory
+
+4. Configure MySQL Database
+
+  Set up a MySQL database named mydatabase
+
+  Update database connection credentials in the code (host, user, password) if necessary
+
+  Create the table api_test with columns matching the extracted fields (NAME, DOB, PHONENO, EMAIL, LOCATION, EDUCATION, UNIVERSITY, COMPANIES, PRIMARY_SKILLS, SECONDARY_SKILLS)
+
+5. Run the Application
+
+  Start the Flask app locally:
+
+  python main.py
+
+
+##How It Works:
+
+  Upload a resume file (PDF or DOCX) through the web interface
+
+  The app extracts the textual content using fitz (for PDFs) or docx2txt (for DOCX)
+
+  Text is processed by the SpaCy NER model to detect entities relevant to resumes
+
+  Extracted details are cleaned, deduplicated, and converted into a structured format
+
+  The parsed information is saved into the MySQL database for future reference
+
