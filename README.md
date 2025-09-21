@@ -1,4 +1,12 @@
+Name: AASIYA HADIYA
 
+Company: CODEC TECHNOLOGIES
+
+ID: E19E86-0116588288923
+
+Designation: Python Developer Intern
+
+Duration: 01/09/2025 to 01/10/2025
 
 # Resume Parsing Web Application
 
