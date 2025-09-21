@@ -1,0 +1,7 @@
+Flask
+spacy
+numpy
+docx2txt
+PyMuPDF
+mysql-connector-python
+Werkzeug
